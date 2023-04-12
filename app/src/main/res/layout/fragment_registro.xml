@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".registro.Registro">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Cliente"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtRegistroNombre"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/registroNombre"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/edtRegistroApellido"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/registroApellido"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/edtRegistroEmail"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/registroEmail"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/edtRegistroCelular"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/registroCelular"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
