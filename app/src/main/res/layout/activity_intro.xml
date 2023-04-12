@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Intro">
+    tools:context=".Intro"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imgIntro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/intro" />
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:src="@drawable/intro"
+        android:layout_gravity="center|top"/>
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/logo"
         android:layout_gravity="center"
@@ -27,24 +29,45 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:layout_gravity="center|top"
-        android:layout_marginTop="0dp"/>
+        android:layout_gravity="center"
+        android:layout_marginBottom="280dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicaciones Moderan"
+        android:text="Aplicaciones Modernas"
         android:textColor="@color/introBackgroud"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginTop="250sp"/>
-    <Button
-        android:layout_marginBottom="50dp"
-        android:text="Login"
-        android:layout_gravity="center|bottom"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="250dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/btnbackground"/>
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        >
+        <Button
+            android:layout_margin="5dp"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnbackground"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnbackground2"
+            android:textColor="@color/introBackgroud"/>
+
+    </LinearLayout>
+
 
 
 </FrameLayout>
