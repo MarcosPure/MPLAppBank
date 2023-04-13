@@ -12,6 +12,12 @@
         android:theme="@style/Theme.MPLAppBank"
         tools:targetApi="31">
         <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
             android:name=".Intro"
             android:exported="true">
             <intent-filter>
@@ -22,14 +28,12 @@
         </activity>
         <activity
             android:name=".Splash"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MPLAppBank.NoActionBar"></activity>
+            android:theme="@style/Theme.MPLAppBank.NoActionBar" />
     </application>
 
 </manifest>

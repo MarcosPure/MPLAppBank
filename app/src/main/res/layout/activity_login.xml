@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Login">
 
     <TextView
         android:text="Welcome Back"
@@ -79,7 +82,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:drawableLeft="@drawable/google"
-            android:text="Sing up with google"
+            android:text="Sign up with google"
             android:padding="20dp"/>
         <Button
             android:layout_width="match_parent"
@@ -91,7 +94,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:drawableLeft="@drawable/facebook"
-            android:text="Sing up with facebook"
+            android:text="Sign up with facebook"
             android:padding="20dp"/>
         <TextView
             android:layout_width="wrap_content"

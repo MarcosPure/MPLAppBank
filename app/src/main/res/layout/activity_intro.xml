@@ -51,6 +51,7 @@
         android:layout_marginBottom="40dp"
         >
         <Button
+            android:id="@+id/btnLogin"
             android:layout_margin="5dp"
             android:text="Login"
             android:layout_gravity="center"
@@ -59,18 +60,21 @@
             android:background="@drawable/btnbackground"
             style="@android:style/Widget.Button"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:onClick="Ir_Login"/>
 
         <Button
+            android:id="@+id/btnSignUp"
             android:layout_margin="5dp"
-            android:text="SingUp"
+            android:text="SignUp"
             style="@android:style/Widget.Button"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/btnbackground2"
             android:textColor="@color/introBackgroud"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:onClick="Ir_SignUp"/>
 
     </LinearLayout>
 
